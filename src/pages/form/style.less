@@ -1,0 +1,38 @@
+.formPage__container {
+  max-width: 1000px;
+  margin: auto;
+
+  .ant-col-8 {
+    flex: none;
+    min-width: 100px;
+  }
+
+  .ant-col-offset-8 {
+    margin-left: 0;
+  }
+
+  .ant-col-16 {
+    max-width: none;
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: @primary;
+    border-color: @primary;
+  }
+
+  .common__button {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .formPage__step {
+    .ant-steps-icon-dot {
+      background: @primary !important;
+    }
+    .ant-steps-item-finish
+      > .ant-steps-item-container
+      > .ant-steps-item-tail::after {
+      background-color: @primary;
+    }
+  }
+}
